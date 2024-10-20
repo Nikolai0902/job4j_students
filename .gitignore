@@ -34,5 +34,7 @@ build/
 
 .pid
 .cmd
+serv_s.pid
+serv_r.pid
 
 
