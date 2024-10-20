@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <property name="now" value="now()" dbms="postgresql"/>
+    <changeSet id="01" author="Buslaev">
+
+        <createTable tableName="students">
+            <column autoIncrement="true" name="id" type="int">
+                <constraints unique="true" nullable="false" primaryKey="true"/>
+            </column>
+            <column name="card_number" type="int"/>
+            <column name="faculty" type="varchar(2000)"/>
+            <column name="surname" type="varchar(2000)"/>
+            <column name="name" type="varchar(2000)"/>
+            <column name="patronymic" type="varchar(2000)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

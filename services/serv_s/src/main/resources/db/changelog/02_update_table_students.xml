@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="02" author="Buslaev">
+        <insert tableName="students">
+            <column name="card_number" value="120"/>
+            <column name="faculty" value="st1"/>
+            <column name="surname" value="Borisov"/>
+            <column name="name" value="Egor"/>
+            <column name="patronymic" value="Andreevich"/>
+        </insert>
+        <insert tableName="students">
+            <column name="card_number" value="121"/>
+            <column name="faculty" value="st2"/>
+            <column name="surname" value="Denisov"/>
+            <column name="name" value="Nikolai"/>
+            <column name="patronymic" value="Fedorovich"/>
+        </insert>
+        <insert tableName="students">
+            <column name="card_number" value="122"/>
+            <column name="faculty" value="st3"/>
+            <column name="surname" value="Ivanov"/>
+            <column name="name" value="Anton"/>
+            <column name="patronymic" value="Invanovich"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
