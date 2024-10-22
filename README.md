@@ -50,6 +50,7 @@
 * Apache Kafka
 * Checkstyle
 * Swagger
+* Docker
 
 ### Запуск приложения:
 
@@ -57,8 +58,8 @@
 + Запустить Zookeeper (docker-compose up zookeeper)
 + Запустить Kafka (docker-compose up brocker)
 + Запустить minIO (docker-compose up minio)
-+ Запустить сервис Server(Сервис S) ```mvn spring-boot:run```;
-+ Запустить сервис Client(Сервис R)```mvn spring-boot:run```;
++ Запустить сервис Сервис S ```mvn spring-boot:run```;
++ Запустить сервис Сервис R```mvn spring-boot:run```;
 
 _Контакты для связи:_
 

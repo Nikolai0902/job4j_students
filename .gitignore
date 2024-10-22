@@ -32,9 +32,15 @@ build/
 ### VS Code ###
 .vscode/
 
+*.pid
+*.cmd
+*.bsh
+
 .pid
 .cmd
-serv_s.pid
-serv_r.pid
+.bsh
 
+echo "mvnw" >> .gitignore
+echo "mvnw.cmd" >> .gitignore
+echo "build.bsh" >> .gitignore
 
